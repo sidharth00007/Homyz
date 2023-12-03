@@ -15,8 +15,8 @@ const PropertyCard = ({ card }) => {
       <Heart id={card?.id} />
       <img src={card.image} alt="home" />
       <span className="secondaryText r-price">
-        <span style={{ color: "orange" }}>$</span>
-        <span>{card.price}</span>
+        <span style={{ color: "orange" }}>₹</span>
+        <span>{card.price.toLocaleString()}</span>
       </span>
       <span className="primaryText">
         {truncate(card.title, { length: 15 })}

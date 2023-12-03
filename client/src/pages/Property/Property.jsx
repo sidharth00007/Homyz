@@ -68,7 +68,7 @@ const Property = () => {
     <div className="wrapper">
       <div className="flexColStart paddings innerWidth property-container">
         <div className="like">
-          <Heart id={id}/>   
+          <Heart id={id} />
         </div>
         <img src={data?.image} alt="home image" />
         <div className="flexCenter property-details">
@@ -79,7 +79,7 @@ const Property = () => {
             <div className="flexStart head">
               <span className="primaryText">{data?.title}</span>
               <span className="orangeText" style={{ fontSize: "1.5rem" }}>
-                $ {data?.price}
+                ₹ {data?.price?.toLocaleString()}
               </span>
             </div>
 
