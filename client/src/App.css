@@ -1,14 +1,40 @@
-.App{
+.App {
   position: relative;
   overflow-x: clip;
   background-color: white;
 }
-.App>:nth-child(1)
-{
+
+.App>:nth-child(1) {
   background: var(--black);
   position: relative;
 }
-.white-gradient{
+
+::-webkit-scrollbar {
+  width: 7px;
+  /* You can adjust the width as per your preference */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4066ff;
+}
+
+/* For Firefox */
+/* You may need to use !important to override default Firefox styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4066ff transparent;
+}
+
+/* For Edge and IE */
+*::-ms-scrollbar {
+  width: 8px;
+}
+
+*::-ms-scrollbar-thumb {
+  background-color: #4066ff;
+}
+
+.white-gradient {
   position: absolute;
   width: 20rem;
   height: 20rem;
